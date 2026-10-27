@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-neutral-900 text-neutral-100 font-sans antialiased select-none overflow-x-hidden;
+  }
+}
+
+/* Hỗ trợ Light Mode chuẩn */
+html:not(.dark) body {
+  background-color: #f5f5f5 !important;
+  color: #171717 !important;
+}
+
+html:not(.dark) header,
+html:not(.dark) footer,
+html:not(.dark) .bg-neutral-900,
+html:not(.dark) .bg-neutral-900\/80,
+html:not(.dark) .bg-neutral-900\/90,
+html:not(.dark) .bg-neutral-800\/60,
+html:not(.dark) .bg-neutral-800\/50 {
+  background-color: #ffffff !important;
+  color: #171717 !important;
+  border-color: #e5e5e5 !important;
+}
+
+html:not(.dark) .text-white {
+  color: #171717 !important;
+}
+
+html:not(.dark) .text-neutral-400 {
+  color: #666666 !important;
+}
